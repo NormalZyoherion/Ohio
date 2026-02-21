@@ -283,11 +283,11 @@ end,
  tglCorner = Instance.new("UICorner") 
 }
 
-AppleWareiOS.Name = "AppleWare iOS"
+AppleWareiOS.Name = "Nebulaware iOS"
 AppleWareiOS.Parent = gethui()
 
 utils.MainToggle.Name = "MainToggle"
-utils.MainToggle.Parent = AppleWareiOS
+utils.MainToggle.Parent = NebulaWareiOS
 utils.MainToggle.BackgroundColor3 = Color3.fromRGB(23, 0, 40)
 utils.MainToggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
 utils.MainToggle.BorderSizePixel = 0
@@ -306,7 +306,7 @@ utils.tglCorner.Name = "tglCorner"
 utils.tglCorner.Parent = utils.MainToggle
 
 Menu.Name = "Menu"
-Menu.Parent = AppleWareiOS
+Menu.Parent = NebulaWareiOS
 Menu.AnchorPoint = Vector2.new(0.5, 0.5)
 Menu.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Menu.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -348,7 +348,7 @@ CTCzone.Size = UDim2.new(0, 218, 0, 35)
 CTCzone.ImageTransparency = 1
 CTCzone.AutoButtonColor = false
 
-AppleWare.Name = "AppleWare"
+AppleWare.Name = "NebulaWare"
 AppleWare.Parent = CTCzone
 AppleWare.BackgroundTransparency = 1.000
 AppleWare.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -356,20 +356,20 @@ AppleWare.BorderSizePixel = 0
 AppleWare.Position = UDim2.new(0, 31, 0.3, -1)
 AppleWare.Size = UDim2.new(0, 127, 0, 16)
 AppleWare.FontFace = Font.new("rbxassetid://11702779409", Enum.FontWeight.Bold, Enum.FontStyle.Italic) 
-AppleWare.Text = "Apple-Ware"
+AppleWare.Text = "Nebula-Ware"
 AppleWare.TextColor3 = Color3.fromRGB(235, 235, 235)
 AppleWare.TextSize = 14.000
 AppleWare.TextXAlignment = Enum.TextXAlignment.Left
 AppleWare.TextYAlignment = Enum.TextYAlignment.Top
 
-AWlogo.Name = "AWlogo"
+AWlogo.Name = "NBlogo"
 AWlogo.Parent = CTCzone
 AWlogo.BackgroundTransparency = 1.000
 AWlogo.BorderColor3 = Color3.fromRGB(27, 42, 53)
 AWlogo.BorderSizePixel = 0
 AWlogo.Position = UDim2.new(0, 6, 0, 4)
 AWlogo.Size = UDim2.new(0, 17, 0, 27)
-AWlogo.Image = "http://www.roblox.com/asset/?id=17810210522"
+AWlogo.Image = "http://www.roblox.com/asset/?id=73388097631782"
 
 versionBG.Name = "versionBG"
 versionBG.Parent = CTCzone
@@ -379,7 +379,7 @@ versionBG.BorderSizePixel = 0
 versionBG.Position = UDim2.new(0, 143, 0.200000003, 1)
 versionBG.Size = UDim2.new(0, 63, 0, 15)
 
-V002.Name = "v1.0.6"
+V002.Name = "v2.0.0"
 V002.Parent = VersionBG
 V002.BackgroundTransparency = 1.000
 V002.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -387,7 +387,7 @@ V002.BorderSizePixel = 0
 V002.Position = UDim2.new(0, 0, 0, 1)
 V002.Size = UDim2.new(0, 63, 1, 0)
 V002.FontFace =  Font.new("rbxassetid://11702779409", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-V002.Text = "v1.0.6"
+V002.Text = "v2.0.p"
 V002.TextColor3 = Color3.fromRGB(235, 235, 235)
 V002.TextSize = 14
 
@@ -443,7 +443,7 @@ EXECUTOR_ICON.Position = UDim2.new(0, 503, 0, 11)
 EXECUTOR_ICON.Selectable = false
 EXECUTOR_ICON.Size = UDim2.new(0, 20, 0, 20)
 EXECUTOR_ICON.AutoButtonColor = false
-EXECUTOR_ICON.Image = "http://www.roblox.com/asset/?id=17810097965"
+EXECUTOR_ICON.Image = "http://www.roblox.com/asset/?id=73388097631782"
 EXECUTOR_ICON.ImageColor3 = Color3.fromRGB(43, 43, 43)
 
 CLOUD_SCRIPTS_ICON.Name = "CLOUD_SCRIPTS_ICON"
@@ -503,7 +503,7 @@ KeyTime.BorderSizePixel = 0
 KeyTime.Position = UDim2.new(0, 75, 0, 80)
 KeyTime.Size = UDim2.new(0, 155, 0, 15)
 KeyTime.FontFace =  Font.new("rbxassetid://11702779409", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-KeyTime.Text = "23h - 59m"
+KeyTime.Text = "inf - infm"
 KeyTime.TextColor3 = Color3.fromRGB(255, 255, 255)
 KeyTime.TextSize = 15.000
 KeyTime.TextXAlignment = Enum.TextXAlignment.Left
@@ -977,7 +977,7 @@ UIStroke.Parent = exc
 UICorner_13.CornerRadius = UDim.new(0, 5)
 UICorner_13.Parent = exc
 
-UDException.Name = "UDException"
+UDException.Name = "Zeph And UDExeception"
 UDException.Parent = EXC
 UDException.BackgroundTransparency = 1.000
 UDException.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -985,7 +985,7 @@ UDException.BorderSizePixel = 0
 UDException.Position = UDim2.new(0, 45, 0, 10)
 UDException.Size = UDim2.new(0, 90, 0, 18)
 UDException.FontFace =  Font.new("rbxassetid://11702779409", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UDException.Text = "UDException"
+UDException.Text = "Zeph And UDExeception"
 UDException.TextColor3 = Color3.fromRGB(255, 255, 255)
 UDException.TextSize = 14.000
 UDException.TextXAlignment = Enum.TextXAlignment.Left
@@ -1100,7 +1100,7 @@ MODZZ.BorderSizePixel = 0
 MODZZ.Position = UDim2.new(0, 0, 0, 93)
 MODZZ.Size = UDim2.new(0, 275, 0, 35)
 
-takemodzzPFP.Name = "takemodzzPFP"
+takemodzzPFP.Name = "Zeph AKA Co-Owner"
 takemodzzPFP.Parent = MODZZ
 takemodzzPFP.BackgroundTransparency = 1.000
 takemodzzPFP.BorderColor3 = Color3.fromRGB(27, 42, 53)
