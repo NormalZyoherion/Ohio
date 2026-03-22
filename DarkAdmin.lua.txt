@@ -1536,7 +1536,7 @@ CommandSystem:AddCmd({
 	Title = "Help / info",
 	Alias = {"Help", "Info"},
 	Callback = function()
-	    loadstring(game:HttpGet("https://pastefy.app/uxFbjTe3/raw"))()
+	    loadstring(game:HttpGet("https://pastefy.app/4b08m6Gj/raw"))()
 	end
 })
 
