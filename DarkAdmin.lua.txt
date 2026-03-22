@@ -4666,8 +4666,7 @@ CommandSystem:AddCmd({
 })
 
 CommandSystem:AddCmd({
-	Title = "
-betterfling / flinggui / akfling",
+	Title = "betterfling / flinggui / akfling",
 	Alias = {"betterfling", "flinggui", "akfling"},
 	Callback = function()
 		task.spawn(function()
