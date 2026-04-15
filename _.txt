@@ -16901,6 +16901,44 @@ do
 	local pos_closed = UDim2.new(0.5, 0, 0, -35)
 
 	ui_cmdbox_button.Visible = stuff.is_mobile
+local function makeDraggable(frame, dragHandle)
+    local dragging = false
+    local dragStart = nil
+    local startPos = nil
+    
+    dragHandle.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or 
+           input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = frame.Position
+            
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    dragHandle.InputChanged:Connect(function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or 
+                         input.UserInputType == Enum.UserInputType.Touch) then
+            local delta = input.Position - dragStart
+            local newPos = UDim2.new(
+                startPos.X.Scale, 
+                startPos.X.Offset + delta.X,
+                startPos.Y.Scale, 
+                startPos.Y.Offset + delta.Y
+            )
+            frame.Position = newPos
+            pos_open = newPos
+        end
+    end)
+end
+
+makeDraggable(ui_cmdbox_main_container, ui_cmdbox_main_container)
+makeDraggable(ui_cmdbox_main_container, ui_cmdbox_inputbox)
 
 	tween_ui(ui_cmdbox_main_container, 0.25, {Position = pos_closed}, false)
 
