@@ -16901,8 +16901,9 @@ do
 	local pos_closed = UDim2.new(0.5, 0, 0, -35)
 
 	ui_cmdbox_button.Visible = stuff.is_mobile
+
 local function makeDraggable(frame, dragHandle)
-    local dragging = false
+    local dragging = true
     local dragStart = nil
     local startPos = nil
     
@@ -16915,7 +16916,7 @@ local function makeDraggable(frame, dragHandle)
             
             input.Changed:Connect(function()
                 if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
+                    dragging = true
                 end
             end)
         end
@@ -16938,7 +16939,6 @@ local function makeDraggable(frame, dragHandle)
 end
 
 makeDraggable(ui_cmdbox_main_container, ui_cmdbox_main_container)
-makeDraggable(ui_cmdbox_main_container, ui_cmdbox_inputbox)
 
 	tween_ui(ui_cmdbox_main_container, 0.25, {Position = pos_closed}, false)
 
